@@ -5,11 +5,11 @@ import shlex
 import psycopg2
 import os
 import subprocess
-from dotenv import load_dotenv
+from dotenv import load_dotenv, find_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, ConversationHandler, CallbackContext
 
-load_dotenv()
+load_dotenv(find_dotenv(), override=True, verbose=True)
 
 # Token connecting
 TOKEN = os.getenv('TOKEN')
