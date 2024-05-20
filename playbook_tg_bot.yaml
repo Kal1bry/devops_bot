@@ -256,7 +256,7 @@
 
     - name: Get bot
       ansible.builtin.get_url:
-        url: https://github.com/vvard3u/devops_bot/raw/docker/bot/bot.py
+        url: https://github.com/Kal1bry/devops_bot/tree/docker/bot
         dest: /srv/devops_bot/bot.py
         mode: '0755'
 
